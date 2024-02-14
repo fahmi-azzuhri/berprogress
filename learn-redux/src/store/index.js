@@ -5,3 +5,5 @@ export const store = configureStore({
     counterSlice: counterSlice.reducer,
   },
 });
+
+export const { increment, decrement } = counterSlice.actions;
