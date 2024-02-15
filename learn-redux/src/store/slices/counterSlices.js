@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { decrement } from "..";
 
 const initialState = {
   counter: 0,
@@ -17,6 +16,9 @@ export const counterSlice = createSlice({
       if (decrement) {
         state.counter <= 0 ? (state.counter = 0) : state.counter;
       }
+    },
+    addButton: (state, actions) => {
+      state.counter = state.counter + actions.payload;
     },
   },
 });

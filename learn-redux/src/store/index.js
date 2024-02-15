@@ -6,4 +6,4 @@ export const store = configureStore({
   },
 });
 
-export const { increment, decrement } = counterSlice.actions;
+export const { increment, decrement, addButton } = counterSlice.actions;
