@@ -17,10 +17,10 @@ export const counterSlice = createSlice({
         state.counter <= 0 ? (state.counter = 0) : state.counter;
       }
     },
-    addButton: (state, actions) => {
-      state.counter = state.counter + actions.payload;
+    addButton: (state, action) => {
+      state.counter = state.counter + action.payload;
     },
   },
 });
-
+export const { increment, decrement, addButton } = counterSlice.actions;
 console.log(counterSlice);
