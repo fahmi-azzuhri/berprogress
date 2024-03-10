@@ -6,6 +6,15 @@ const requestListener = (request, response) => {
   response.setHeader("Content-Type", "text/html");
   response.statusCode = 200;
   response.end("Hello World!");
+  const { method } = request;
+
+  if (method === GET) {
+    //method ketika get
+  }
+
+  if (method === POST) {
+    //method ketika post
+  }
 };
 
 const server = http.createServer(requestListener);
