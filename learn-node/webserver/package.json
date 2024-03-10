@@ -1,16 +1,12 @@
 {
-  "name": "learn-node",
+  "name": "webserver",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "fahmi azzuhri efki",
-  "license": "ISC",
-  "dependencies": {
-    "filesystem": "^1.0.1",
-    "nodemon": "^3.1.0"
-  }
+  "license": "MIT"
 }
