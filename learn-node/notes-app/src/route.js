@@ -4,9 +4,7 @@ const route = [
   {
     method: "POST",
     path: "/notes",
-    handler: (request, h) => {
-      addNoteHandler;
-    },
+    handler: addNoteHandler,
   },
 ];
 
