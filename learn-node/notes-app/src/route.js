@@ -2,6 +2,7 @@ const {
   addNoteHandler,
   getAllNotesHandler,
   getIdHandler,
+  editNoteByIdHandler,
 } = require("./handler");
 
 const route = [
@@ -19,6 +20,11 @@ const route = [
     method: "GET",
     path: "/notes/{id}",
     handler: getIdHandler,
+  },
+  {
+    method: "PUT",
+    path: "/notes/{id}",
+    handler: editNoteByIdHandler,
   },
 ];
 
