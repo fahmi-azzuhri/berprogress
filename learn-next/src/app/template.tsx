@@ -7,13 +7,13 @@ export default function Template({
   const [state, setState] = useState(0);
   return (
     <div>
-      <h1>Count {state} </h1>
+      {/* <h1>Count {state} </h1>
       <button
         className="btn btn-primary py-2 px-4 cursor-pointer"
         onClick={() => setState(state + 1)}
       >
         Klik +1
-      </button>
+      </button> */}
       {children}
     </div>
   );
