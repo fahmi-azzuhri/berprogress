@@ -1,6 +1,6 @@
 void main() {
-  var listString = <String>["Fahmi", "Azzuhri", "Efki", "Siti", "Amelia"];
-
+  // var listString = <String>["Fahmi", "Azzuhri", "Efki", "Siti", "Amelia"];
+  List<String> listString = ["Fahmi", "Azzuhri", "Efki", "Siti", "Amelia"];
   print(listString);
   listString.add("Tasya");
   print(listString);
