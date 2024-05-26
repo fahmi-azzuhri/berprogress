@@ -8,4 +8,5 @@ class Immutable {
 void main() {
   var nameImmutable = const Immutable("Fahmi",
       "Azzuhri"); //di dalam variabel masukkan nama constructor disertai dengan const
+  print(nameImmutable);
 }
