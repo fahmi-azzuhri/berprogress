@@ -13,5 +13,6 @@ router.post("/login", validateLogin, loginController.login);
 router.get("/admin/users", verifyToken, userController.findUser);
 router.post("/admin/users", verifyToken, userController.createUser);
 router.get("/admin/users/:id", verifyToken, userController.findUserById);
+router.put("/admin/users/:id", verifyToken, userController.updateUser);
 
 module.exports = router;
