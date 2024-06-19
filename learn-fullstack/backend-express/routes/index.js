@@ -11,5 +11,6 @@ const verifyToken = require("../middlewares/auth");
 router.post("/register", validateRegister, registerController.register);
 router.post("/login", validateLogin, loginController.login);
 router.get("/admin/users", verifyToken, userController.findUser);
+router.post("/admin/users", verifyToken, userController.createUser);
 
 module.exports = router;
