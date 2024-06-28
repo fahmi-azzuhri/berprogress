@@ -18,7 +18,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   //destructure context "setIsAuthenticated"
-  const setIsAuthenticated = useContext(AuthContext);
+  const { setIsAuthenticated } = useContext(AuthContext);
 
   //define state
   const [email, setEmail] = useState("");

@@ -1,26 +1,45 @@
+//import hook react
 import React, { useState } from "react";
+
+//import hook useNavigate from react router dom
 import { useNavigate } from "react-router-dom";
+
+//import services api
 import api from "../../services/api";
+
 export default function Register() {
+  //navigate
   const navigate = useNavigate();
+
+  //define state
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [validation, setValidation] = useState("");
 
+  //define state validation
+  const [validation, setValidation] = useState([]);
+
+  //function "register"
   const register = async (e) => {
     e.preventDefault();
+
+    //call api register
     await api
       .post("/api/register", {
         name: name,
         email: email,
         password: password,
       })
-      .then(() => navigate("/login"))
+      .then(() => {
+        //redirect ke halaman login
+        navigate("/login");
+      })
       .catch((error) => {
+        //assign error to state "validation"
         setValidation(error.response.data);
       });
   };
+
   return (
     <div className="row justify-content-center">
       <div className="row justify-content-center">

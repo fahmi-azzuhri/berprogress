@@ -6,7 +6,7 @@ import Home from "../views/home";
 import Register from "../views/auth/Register";
 
 export default function AppRoutes() {
-  const isAuthenticated = useContext(AuthContext);
+  const { isAuthenticated } = useContext(AuthContext);
   return (
     <Routes>
       <Route path="/" element={<Home />} />
