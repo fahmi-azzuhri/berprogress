@@ -4,9 +4,9 @@ import { AuthContext } from "../context/AuthContext";
 import Login from "../views/auth/Login";
 import Home from "../views/home";
 import Register from "../views/auth/Register";
-
+import Dashboard from "../views/admin/dashboard/index.jsx";
 export default function AppRoutes() {
-  const isAuthenticated = useContext(AuthContext);
+  const { isAuthenticated } = useContext(AuthContext);
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -28,6 +28,12 @@ export default function AppRoutes() {
           ) : (
             <Register />
           )
+        }
+      />
+      <Route
+        path="/admin/dashboard"
+        element={
+          isAuthenticated ? <Dashboard /> : <Navigate to="/login" replace />
         }
       />
     </Routes>
