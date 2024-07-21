@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/main_page.dart';
+import 'package:myapp/column_row.dart';
+// import 'package:myapp/main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,8 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: MainPage(),
+    return const MaterialApp(
+      // home: const MainPage(),
+      home: RowColumn(),
     );
   }
 }
