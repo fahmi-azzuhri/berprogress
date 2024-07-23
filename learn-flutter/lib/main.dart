@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 // import 'package:myapp/column_row.dart';
 // import 'package:myapp/main_page.dart';
 // import 'package:myapp/container.dart';
-import 'package:myapp/box_decoration.dart';
+// import 'package:myapp/box_decoration.dart';
+import 'package:myapp/sized_box.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         // home: const MainPage(),
         // home: RowColumn(),
         // home: MyContainer()
-        home: DecoBox());
+        // home: DecoBox()
+        home: Sized());
   }
 }
