@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/stateful_widget.dart';
+import 'package:myapp/stack.dart';
+// import 'package:myapp/stateful_widget.dart';
 // import 'package:myapp/text_widget.dart';
 // import 'package:myapp/column_row.dart';
 // import 'package:myapp/main_page.dart';
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Counter());
+    return const MaterialApp(home: Stackk());
+    // home: Counter());
     // home: const MainPage(),
     // home: RowColumn(),
     // home: MyContainer()
