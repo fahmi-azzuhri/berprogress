@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/align.dart';
 // import 'package:myapp/stack.dart';
 import 'package:myapp/wrap.dart';
 // import 'package:myapp/stateful_widget.dart';
@@ -18,7 +19,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Wrapp());
+    return const MaterialApp(home: Aligen());
+    // home: Wrapp()
+
     // home: Stackk()
     // home: Counter());
     // home: const MainPage(),
