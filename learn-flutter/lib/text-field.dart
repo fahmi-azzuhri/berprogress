@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 
 class FieldText extends StatelessWidget {
   const FieldText({super.key});
@@ -9,18 +10,23 @@ class FieldText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Text Field")),
-      body: const Padding(
-        padding: EdgeInsets.fromLTRB(50, 10, 50, 10),
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(50, 10, 50, 10),
         child: Column(
           children: [
             TextField(
               decoration: InputDecoration(
+                  prefix: Container(
+                    //prefix di depan, kalo di belakang suffix
+                    padding: const EdgeInsets.all(4),
+                    child: const Icon(EvaIcons.person),
+                  ),
                   hintText: "Enter your name",
-                  hintStyle:
-                      TextStyle(color: Color.fromARGB(255, 255, 100, 100)),
+                  hintStyle: const TextStyle(
+                      color: Color.fromARGB(255, 255, 100, 100)),
                   // labelText: Text("Ini label"),
                   labelText: "ini label",
-                  labelStyle: TextStyle(
+                  labelStyle: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w300,
                       color: Colors.lightGreen),
